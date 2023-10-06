@@ -1,3 +1,7 @@
+//Author: Nadiem Idrisi
+//Program: Number guessing game, guess a random number while using hints to guess it in few tries.
+//10/06/2023
+
 using System;
 using System.Xml.Serialization;
 
