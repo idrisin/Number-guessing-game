@@ -11,34 +11,18 @@ namespace gameCode{
         public static int guessGood = 0;
         public static string userGuessString = null;
         public static string response = null;
+        public static string response2 = null;
         public static bool winnerWinner = false;
         public static int goalNum = random.Next(1, 100);
         public static string primePhrase = null;
         public static int tryCount = 0;
+        public static int oldGuessDelta = 0;
+        public static int diffGoalGuess = 0;
+        public static int coldLimit = 25;
+        public static int coolLimit = 10;
+        public static int warmLimit = 3;
 
-        public static string howClose(int guess, int goal){
-            int diff = Math.Abs(goal-guess);
-            if (diff == 0){
-                winnerWinner = true;
-                return "\nYou got it!";
-                
-            }
-            else if (diff >= 35){
-                return "\nCold...\n";
-            }
-            else if (diff >= 25){
-                return "\nLukewarm baby\n";
-            }
-            else if (diff >= 10){
-                return "\nGetting warm..!\n";
-            }
-            else if (diff >= 3){
-                return "\nHeating up!\n";
-            }
-            else {
-                return "\nRed Hot!\n";
-            }
-        }
+
 
         public static void intCheckAndConvert(string guessToConvert){
             if (int.TryParse(guessToConvert, out int convertedValue)){
@@ -110,9 +94,9 @@ namespace gameCode{
 
             //check if guess is between min and max. If it's good then 'guessGood' now contains the guess
             NumberGuess.minMaxCheck(guessPassIntCheck);
-            response = NumberGuess.howClose(guessGood, goalNum);
-
+            response = NumberGuess.howClose(guessGood, goalNum) + NumberGuess.howclose2();
             NumberGuess.WinCheck(response);
+            oldGuessDelta = diffGoalGuess;
         }
 
         public static void primeHint(){
@@ -126,17 +110,60 @@ namespace gameCode{
                 primePhrase = "pretty low.";
             }
         }
+        public static string howClose(int guess, int goal){
+            diffGoalGuess = Math.Abs(goal-guess);
+            if (diffGoalGuess == 0){
+                winnerWinner = true;
+                return "\nYou got it!";
+                
+            }
+            else if (diffGoalGuess >= coldLimit){
+                return "\n Freezing Cold...";
+            }
+            else if (diffGoalGuess >= coolLimit){
+                return "\nCool...";
+            }
+            else if (diffGoalGuess >= warmLimit){
+                return "\nWarm...";
+            }
+            else {
+                return "\nRed Hot...!";
+            }
+        }
+        public static string howclose2(){
+            if (oldGuessDelta == 0) {
+                return " \n";
+            }
+            else if (oldGuessDelta < diffGoalGuess && diffGoalGuess >= coolLimit){
+                return " and you're getting farther.\n";
+            }
+            else if (oldGuessDelta > diffGoalGuess && diffGoalGuess >= coolLimit){
+                return " but you're getting closer!\n";
+            }
+            else if (oldGuessDelta > diffGoalGuess && diffGoalGuess >= warmLimit){
+                return " and you're getting closer!\n";
+            }
+            else if (oldGuessDelta < diffGoalGuess && diffGoalGuess >= warmLimit){
+                return " but you're getting farther.\n";
+            }
+            else if (oldGuessDelta == diffGoalGuess){
+                return " but did you make the same guess? Either that or you overshot pretty hard.\n";
+            }
+            else {
+                return " \n";
+        }
+        }
         static void Main(string[] args){
             Console.WriteLine("Let's play a guessing game!\n\n I'll choose a number between 1 and 100. Guess my number and I'll tell you how close you are.\n\n I'll also tell you ONE number that is a factor of my number. If it's prime, I'll let you know.\n\n Guess my number in as few tries as you can!");
 
             //hint
             int hint = NumberGuess.giveHint(goalNum);
             if (hint != 0){
-                Console.WriteLine("My number is divisible by "+ hint + "!");
+                Console.WriteLine("My number is divisible by "+ hint + "!\n");
             }
             else{
                 NumberGuess.primeHint();
-                Console.WriteLine("Your number is prime and " + primePhrase);
+                Console.WriteLine("My number is prime and " + primePhrase + "\n");
             }
             //user input
             
