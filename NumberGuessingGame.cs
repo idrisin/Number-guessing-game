@@ -3,7 +3,6 @@
 //10/06/2023
 
 using System;
-using System.Xml.Serialization;
 
 namespace gameCode{
     class NumberGuess{
@@ -39,7 +38,7 @@ namespace gameCode{
 
         public static int giveHint(int goalNeedsHint){
             List<int> possibleHints = new List<int>();
-            //for loop to find factors, I'm purposely letting the loop add the original goalNeedsHint as a factor to use it to find the length of the list
+            //for loop to find factors
             for (int i = 2; i <= goalNeedsHint; i++){
                 if (goalNeedsHint % i == 0){
                     possibleHints.Add(i);

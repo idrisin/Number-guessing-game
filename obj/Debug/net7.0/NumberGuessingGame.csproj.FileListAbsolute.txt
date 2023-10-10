@@ -12,3 +12,17 @@ C:\Users\shiha\Documents\Code\C#\NumberGuessingGame\obj\Debug\net7.0\refint\Numb
 C:\Users\shiha\Documents\Code\C#\NumberGuessingGame\obj\Debug\net7.0\NumberGuessingGame.pdb
 C:\Users\shiha\Documents\Code\C#\NumberGuessingGame\obj\Debug\net7.0\NumberGuessingGame.genruntimeconfig.cache
 C:\Users\shiha\Documents\Code\C#\NumberGuessingGame\obj\Debug\net7.0\ref\NumberGuessingGame.dll
+C:\Users\shiha\Documents\Code\C#\NumberGuessingGame\code\bin\Debug\net7.0\NumberGuessingGame.exe
+C:\Users\shiha\Documents\Code\C#\NumberGuessingGame\code\bin\Debug\net7.0\NumberGuessingGame.deps.json
+C:\Users\shiha\Documents\Code\C#\NumberGuessingGame\code\bin\Debug\net7.0\NumberGuessingGame.runtimeconfig.json
+C:\Users\shiha\Documents\Code\C#\NumberGuessingGame\code\bin\Debug\net7.0\NumberGuessingGame.dll
+C:\Users\shiha\Documents\Code\C#\NumberGuessingGame\code\bin\Debug\net7.0\NumberGuessingGame.pdb
+C:\Users\shiha\Documents\Code\C#\NumberGuessingGame\code\obj\Debug\net7.0\NumberGuessingGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\shiha\Documents\Code\C#\NumberGuessingGame\code\obj\Debug\net7.0\NumberGuessingGame.AssemblyInfoInputs.cache
+C:\Users\shiha\Documents\Code\C#\NumberGuessingGame\code\obj\Debug\net7.0\NumberGuessingGame.AssemblyInfo.cs
+C:\Users\shiha\Documents\Code\C#\NumberGuessingGame\code\obj\Debug\net7.0\NumberGuessingGame.csproj.CoreCompileInputs.cache
+C:\Users\shiha\Documents\Code\C#\NumberGuessingGame\code\obj\Debug\net7.0\NumberGuessingGame.dll
+C:\Users\shiha\Documents\Code\C#\NumberGuessingGame\code\obj\Debug\net7.0\refint\NumberGuessingGame.dll
+C:\Users\shiha\Documents\Code\C#\NumberGuessingGame\code\obj\Debug\net7.0\NumberGuessingGame.pdb
+C:\Users\shiha\Documents\Code\C#\NumberGuessingGame\code\obj\Debug\net7.0\NumberGuessingGame.genruntimeconfig.cache
+C:\Users\shiha\Documents\Code\C#\NumberGuessingGame\code\obj\Debug\net7.0\ref\NumberGuessingGame.dll

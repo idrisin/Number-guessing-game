@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\shiha\\Documents\\Code\\C#\\NumberGuessingGame\\NumberGuessingGame.csproj",
+      "projectUniqueName": "C:\\Users\\shiha\\Documents\\Code\\C#\\NumberGuessingGame\\code\\NumberGuessingGame.csproj",
       "projectName": "NumberGuessingGame",
-      "projectPath": "C:\\Users\\shiha\\Documents\\Code\\C#\\NumberGuessingGame\\NumberGuessingGame.csproj",
+      "projectPath": "C:\\Users\\shiha\\Documents\\Code\\C#\\NumberGuessingGame\\code\\NumberGuessingGame.csproj",
       "packagesPath": "C:\\Users\\shiha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\shiha\\Documents\\Code\\C#\\NumberGuessingGame\\obj\\",
+      "outputPath": "C:\\Users\\shiha\\Documents\\Code\\C#\\NumberGuessingGame\\code\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\shiha\\AppData\\Roaming\\NuGet\\NuGet.Config",

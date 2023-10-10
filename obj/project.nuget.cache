@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BQpW2zDkfOLkJnolveNpZqK3Kzgg2iDWbphHH9vgnOAF6abd5dGoZd969iufCq7TSLv0Y2H8GtEFe30y6We+Yw==",
+  "dgSpecHash": "o6Vph5biutpb6aQqYqeHjPClwymwTe7v4n6dA/2TkR6pwFJKd5uUJlOLUmJAvhGiWAZPO9SmAmD3gFf7OesIZQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\shiha\\Documents\\Code\\C#\\NumberGuessingGame\\NumberGuessingGame.csproj",
+  "projectFilePath": "C:\\Users\\shiha\\Documents\\Code\\C#\\NumberGuessingGame\\code\\NumberGuessingGame.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
